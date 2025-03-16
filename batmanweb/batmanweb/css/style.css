@@ -1,0 +1,417 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Anton+SC&family=Big+Shoulders:opsz,wght@10..72,100..900&family=Montserrat:ital,wght@0,401;1,401&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+html {  
+scroll-behavior: smooth;
+}
+body{
+    font-family: "Aldrich", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-image: url(../img/katherine-gu-2CotQSBTcjI-unsplash.jpg);
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.titlevid{
+    width: 100%;
+}
+.batlogo{
+    width: 90px;
+}
+header h1, header p{
+    position: absolute;
+    z-index: 99;
+}
+.navigatin{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;   
+}
+nav{
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    height: 30px;
+    top: 20px;
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    z-index: 1000;
+    font-size: 20px;
+}
+ul li a:hover{
+    color: #ffee00;
+    transition: 0.5s;
+}
+nav ul{
+    background-color: #0000005d;
+    height: 30px;
+    z-index: 1000;
+
+}
+ul li{
+    list-style-type: none;
+    z-index: 1000;
+}
+header{
+    background-color: #000;
+    margin-bottom: 50px;
+    padding-bottom: -10px;
+    box-shadow: 0px 0px 1000px 0px rgba(0, 0, 0, 0.808);
+}
+header h1{
+    top: 200px;
+    left: 100px;
+    font-size: 250px;
+    color: #fff;
+    background: linear-gradient(to right, yellow, black);
+    background-clip: text;
+    color: transparent;
+}
+header p{
+    top: 430px;
+    left: 120px;
+    font-size: 40px;
+    color: #fff;
+    letter-spacing: 15px;
+}
+.titles{
+    display: flex;
+    width: 100%;
+    height: 200vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.titles div{
+    animation: scroll-reveal linear;
+    animation-timeline: view();
+    animation-range: entry 15% cover 50%;
+}
+.titles div h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    width: 900px;
+    height: 60px;
+}
+.titles div{
+    background-image: url(../img/brushstroke.png);
+    background-position: center;
+    background-size: cover;
+}
+.mostwanteds{
+    margin-top: 100px;
+    margin-bottom: 400px;
+}
+.mostwanted h3{
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 15px;
+}
+.slideshow-container {
+    max-width: 600px;
+    position: relative;
+    margin: auto;
+    background-color: #000000;
+    padding: 40px;
+  }
+  .mySlides {
+    display: none;
+  }
+.dots{
+    text-align:center
+}
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 52%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  .next {
+    right: 40px;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: #fff;
+  }
+  
+  .text {
+    color: #f2f2f2;
+    font-size: 25px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 45px;
+    width: 85%;
+    text-align: center;
+    background-color: #00000083;
+  }
+  
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+.mySlides img{
+    object-fit: cover;
+    width: 100%;
+    height: 600px;
+    border-radius: 50%;
+}
+.cartitle h3{
+    font-size: 90px;
+    color: #fff;
+}
+.cartitle{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.batmobilefacts img{
+    width: 90%;
+    height: auto;
+}
+.batmobilefacts{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+.batmobil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.right{
+    align-self: flex-end;
+    align-items: center;
+    animation: slideInRight 2s ease-in-out;
+
+}
+.left{
+    align-self: flex-start;
+    align-items: center;
+    animation: slideInLeft 2s ease-in-out;
+
+}
+.left h3, .right h3{
+    color: #fff;
+    font-size: 40px;
+}
+.left, .right, .middle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: #000 10px;
+    padding: 75px;
+    width: 600px;
+    background-color: #00000098;
+    margin: 20px;
+}
+.middle{
+    align-self: center;
+    justify-self: center;
+    margin: 80px;
+    align-items: center;
+    box-shadow:  20px 20px 40px 40px rgb(0, 0, 0, 0.5);
+    width: 70%;
+}
+section{
+    margin-top: 100px;
+
+}
+.middle h2, .batfamilycim{
+    font-size: 80px;
+    margin-bottom: 80px;
+    color: #fff;
+}
+.characters{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: zoomIn 2s ease-in-out;
+
+}
+.entry{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0000008e;
+    padding: 20px;
+    margin: 30px;
+}
+.entry h3, .entry p{
+    color: #fff;
+}
+.entry img{
+    width: 300px;
+}
+.entry h3{
+    font-size: 40px;
+}
+.entry p{
+    font-size: 30px;
+}
+.entry span{
+    font-style: italic;
+}
+.him{
+    color: rgb(117, 0, 0);
+}
+footer div p{
+    color: #fff;
+}
+footer div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 40%;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #00000080;
+}
+.copyright{
+position: relative;
+color: #fff;
+}
+@keyframes scroll-reveal{
+    0%{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+} 
+@property --angle1{
+    syntax: "<angle>";
+    initial-value: 180deg;
+    inherits: false;
+}
+.slideshow-container::after{
+    background: conic-gradient(from var(--angle), transparent 70%, yellow);
+}
+.slideshow-container::after, .slideshow-container::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    padding: 6px;
+    z-index: -1;
+    filter: blur(1rem);
+    animation: 4s spin linear infinite;
+} 
+.slideshow-container::before{
+    background: conic-gradient(from var(--angle1), transparent 70%, yellow);
+}
+@keyframes spin{
+    from{
+        --angle : 0deg;
+        --angle1 : 180deg
+    }
+    to{
+        --angle : 360deg;
+        --angle1 : 540deg
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
